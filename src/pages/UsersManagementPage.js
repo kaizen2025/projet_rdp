@@ -273,7 +273,6 @@ const UsersManagementPage = () => {
                 </Grid>
                 <Grid item xs={12} md={9}>
                     {isLoadingOUUsers ? <LoadingScreen type="list" /> : !filteredUsers.length ? (
-                    {!filteredUsers.length ? (
                         <Paper elevation={2} sx={{ p: 4, borderRadius: 2 }}>
                             <EmptyState type={searchTerm ? 'search' : 'empty'} title={searchTerm ? 'Aucun utilisateur trouvé' : 'Aucun utilisateur'} onAction={searchTerm ? clearFilters : () => setDialog({ type: 'createAd' })} />
                         </Paper>
